@@ -15,7 +15,7 @@
     "rules": {
         "indent": [
             "error",
-            "tab"
+            "space"
         ],
         "linebreak-style": [
             "error",
@@ -26,5 +26,8 @@
             "always"
         ],
         "no-console": 0
+    },
+    "globals": {
+        "Exception" : false
     }
 }
