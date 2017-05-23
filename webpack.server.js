@@ -1,5 +1,6 @@
-var path = require("path");
-var fs = require("fs");
+let path = require("path");
+let fs = require("fs");
+let webPack = require("webpack");
 
 const nodeModules = fs.readdirSync("./node_modules").filter(d => d != ".bin");
 
@@ -18,6 +19,11 @@ function ignoreNodeModules (context, request, callback){
 }
 
 function createConfig(isDebug){
+    const plugins = [];
+    if(!isDebug){
+        plugins.push(new webPack.optimize.UglifyJsPlugin());
+    }
+
     return {
         target: "node",
         devtool: "source-map",
@@ -37,7 +43,8 @@ function createConfig(isDebug){
                 { test: /\.js$/, loader: "eslint-loader", exclude: /node_modules/ }
             ]
         },
-        externals: [ignoreNodeModules]
+        externals: [ignoreNodeModules],
+        plugins: plugins
     };
 }
 

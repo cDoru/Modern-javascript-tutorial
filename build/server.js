@@ -98,7 +98,7 @@ var _shared = __webpack_require__(0);
 
 (0, _shared.testWebpackIsWorking)();
 // check source-map is working
-throw new Error("Show me some stacktrace");
+console.log("server is also running");
 
 /***/ }
 /******/ ]);
