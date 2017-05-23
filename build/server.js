@@ -61,14 +61,34 @@
 /******/ 	__webpack_require__.p = "";
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = 0);
+/******/ 	return __webpack_require__(__webpack_require__.s = 1);
 /******/ })
 /************************************************************************/
 /******/ ([
 /* 0 */
 /***/ function(module, exports) {
 
-throw new Error("Module build failed: Error: /Users/dorucioclea/Desktop/Exercises/tutorial/.eslintrc.json:\n\tConfiguration for rule \"indent\" is invalid:\n\tValue \"space\" no (or more than one) schemas match.\n\n    at validateRuleOptions (/Users/dorucioclea/Desktop/Exercises/tutorial/node_modules/eslint/lib/config/config-validator.js:109:15)\n    at Object.keys.forEach.id (/Users/dorucioclea/Desktop/Exercises/tutorial/node_modules/eslint/lib/config/config-validator.js:156:13)\n    at Array.forEach (native)\n    at Object.validate (/Users/dorucioclea/Desktop/Exercises/tutorial/node_modules/eslint/lib/config/config-validator.js:155:35)\n    at Object.load (/Users/dorucioclea/Desktop/Exercises/tutorial/node_modules/eslint/lib/config/config-file.js:559:19)\n    at loadConfig (/Users/dorucioclea/Desktop/Exercises/tutorial/node_modules/eslint/lib/config.js:63:33)\n    at getLocalConfig (/Users/dorucioclea/Desktop/Exercises/tutorial/node_modules/eslint/lib/config.js:130:29)\n    at Config.getConfig (/Users/dorucioclea/Desktop/Exercises/tutorial/node_modules/eslint/lib/config.js:260:26)\n    at processText (/Users/dorucioclea/Desktop/Exercises/tutorial/node_modules/eslint/lib/cli-engine.js:224:33)\n    at CLIEngine.executeOnText (/Users/dorucioclea/Desktop/Exercises/tutorial/node_modules/eslint/lib/cli-engine.js:754:26)\n    at lint (/Users/dorucioclea/Desktop/Exercises/tutorial/node_modules/eslint-loader/index.js:211:17)\n    at Object.module.exports (/Users/dorucioclea/Desktop/Exercises/tutorial/node_modules/eslint-loader/index.js:206:21)");
+"use strict";
+"use strict";
+
+Object.defineProperty(exports, "__esModule", {
+    value: true
+});
+exports.testWebpackIsWorking = testWebpackIsWorking;
+function testWebpackIsWorking() {
+    console.log("webpack is working");
+}
+
+/***/ },
+/* 1 */
+/***/ function(module, exports, __webpack_require__) {
+
+"use strict";
+"use strict";
+
+var _shared = __webpack_require__(0);
+
+(0, _shared.testWebpackIsWorking)();
 
 /***/ }
 /******/ ]);
