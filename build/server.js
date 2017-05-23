@@ -61,7 +61,7 @@
 /******/ 	__webpack_require__.p = "";
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = 1);
+/******/ 	return __webpack_require__(__webpack_require__.s = 2);
 /******/ })
 /************************************************************************/
 /******/ ([
@@ -81,14 +81,24 @@ function testWebpackIsWorking() {
 
 /***/ },
 /* 1 */
+/***/ function(module, exports) {
+
+module.exports = require("source-map-support/register");
+
+/***/ },
+/* 2 */
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
 "use strict";
 
+__webpack_require__(1);
+
 var _shared = __webpack_require__(0);
 
 (0, _shared.testWebpackIsWorking)();
+// check source-map is working
+throw new Error("Show me some stacktrace");
 
 /***/ }
 /******/ ]);
